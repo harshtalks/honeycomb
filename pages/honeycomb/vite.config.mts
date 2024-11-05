@@ -12,12 +12,6 @@ export default withPageConfig({
   },
   publicDir: resolve(rootDir, 'public'),
   build: {
-    lib: {
-      formats: ['iife'],
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'ContentRuntimeScript',
-      fileName: 'index',
-    },
-    outDir: resolve(rootDir, '..', '..', 'dist', 'content-runtime'),
+    outDir: resolve(rootDir, '..', '..', 'dist', 'honeycomb'),
   },
 });

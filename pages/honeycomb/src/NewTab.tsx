@@ -8,7 +8,7 @@ import { t } from '@extension/i18n';
 const NewTab = () => {
   const theme = useStorage(exampleThemeStorage);
   const isLight = theme === 'light';
-  const logo = isLight ? 'new-tab/logo_horizontal.svg' : 'new-tab/logo_horizontal_dark.svg';
+  const logo = isLight ? 'honeycomb/logo_horizontal.svg' : 'honeycomb/logo_horizontal_dark.svg';
   const goGithubSite = () =>
     chrome.tabs.create({ url: 'https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite' });
 
@@ -20,7 +20,7 @@ const NewTab = () => {
           <img src={chrome.runtime.getURL(logo)} className="App-logo" alt="logo" />
         </button>
         <p>
-          Edit <code>pages/new-tab/src/NewTab.tsx</code>
+          Edit <code>pages/honeycomb/src/NewTab.tsx</code>
         </p>
         <h6>The color of this paragraph is defined using SASS.</h6>
         <Button className="mt-4" onClick={exampleThemeStorage.toggle} theme={theme}>

@@ -1,9 +1,6 @@
 import 'webextension-polyfill';
-import { exampleThemeStorage } from '@extension/storage';
 
-exampleThemeStorage.get().then(theme => {
-  console.log('theme', theme);
+chrome.action.onClicked.addListener(function () {
+  const newURL = chrome.runtime.getURL('honeycomb/index.html');
+  chrome.tabs.create({ url: newURL });
 });
-
-console.log('background loaded');
-console.log("Edit 'chrome-extension/src/background/index.ts' and save to reload.");

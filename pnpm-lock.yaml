@@ -127,6 +127,9 @@ importers:
       '@laynezh/vite-plugin-lib-assets':
         specifier: ^0.5.23
         version: 0.5.24(vite@5.4.9(@types/node@22.7.4)(sass@1.79.4)(terser@5.34.1))
+      '@types/webextension-polyfill':
+        specifier: ^0.12.1
+        version: 0.12.1
       '@types/ws':
         specifier: ^8.5.12
         version: 8.5.12
@@ -316,7 +319,7 @@ importers:
         version: link:../../packages/vite-config
       concurrently:
         specifier: ^9.0.1
-        version: 9.0.1
+        version: 9.1.0
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -1226,6 +1229,9 @@ packages:
   '@types/stack-utils@2.0.3':
     resolution: {integrity: sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==}
 
+  '@types/webextension-polyfill@0.12.1':
+    resolution: {integrity: sha512-xPTFWwQ8BxPevPF2IKsf4hpZNss4LxaOLZXypQH4E63BDLmcwX/RMGdI4tB4VO4Nb6xDBH3F/p4gz4wvof1o9w==}
+
   '@types/which@2.0.2':
     resolution: {integrity: sha512-113D3mDkZDjo+EeUEHCFy0qniNc1ZpecGiAU7WSo7YDoSzolZIQKpYFHrPpjkB2nuyahcKfrmLXeQlh7gqJYdw==}
 
@@ -1795,8 +1801,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  concurrently@9.0.1:
-    resolution: {integrity: sha512-wYKvCd/f54sTXJMSfV6Ln/B8UrfLBKOYa+lzc6CHay3Qek+LorVSBdMVfyewFhRbH0Rbabsk4D+3PL/VjQ5gzg==}
+  concurrently@9.1.0:
+    resolution: {integrity: sha512-VxkzwMAn4LP7WyMnJNbHN5mKV9L2IbyDjpzemKr99sXNR3GqRNMMHdm7prV1ws9wg7ETj6WUkNOigZVsptwbgg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -4803,6 +4809,8 @@ snapshots:
 
   '@types/stack-utils@2.0.3': {}
 
+  '@types/webextension-polyfill@0.12.1': {}
+
   '@types/which@2.0.2': {}
 
   '@types/wrap-ansi@3.0.0': {}
@@ -5577,7 +5585,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  concurrently@9.0.1:
+  concurrently@9.1.0:
     dependencies:
       chalk: 4.1.2
       lodash: 4.17.21
