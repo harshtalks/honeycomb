@@ -43,7 +43,7 @@
     "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
     "postcss-load-config": "^6.0.1",
-    "sass": "1.79.4",
+    "sass": "1.80.6",
     "tailwind-merge": "^2.4.0",
     "tailwind-variants": "^0.2.1",
     "tailwindcss-animate": "^1.0.7",
