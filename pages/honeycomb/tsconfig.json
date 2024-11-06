@@ -3,7 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "ui": ["./src/components/ui/index.ts"],
+      "routes": ["./src/routes/*"]
     },
     "types": ["chrome", "../../vite-env.d.ts"]
   },
